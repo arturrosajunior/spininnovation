@@ -727,7 +727,7 @@ nav .menu-menu-1-container ul li a {color: var(--white) ; text-transform: upperc
 .active .rede-social-header{position: absolute; left: 15%; right: 15%;bottom: -80vh;display: block;} 
 .active .logo { position: absolute !important; left: 15%; right: 15%;top: 100px; display: block; z-index: 1000; }
 
-div#carousel-slide_head { position: relative; padding-top: 64px; }
+div#carousel-slide_head { position: relative; padding-top: 52px; }
 
 
 
