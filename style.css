@@ -770,6 +770,7 @@ body * {
     color: var(--corTextoDefault);
     font-size: 18px;
     font-weight: 400;
+    text-align: justify;
 }
 
 h1,
@@ -788,11 +789,21 @@ h2 {
 }
 
 strong {
-    font-family: 'Metropolis';
+    font-family: 'Arial', sans-serif;
     font-weight: 800 !important;
 }
 
-
+button.eua {
+    position: fixed;
+    top: 20px;
+    right: 29px;
+    z-index: 999;
+    max-width: 35px;
+    border: 0;
+    padding: 0;
+    background: transparent;
+}
+.rede-social-footer.text-end ul{text-align: right !important;}
 
 #masthead {
     position: fixed;
@@ -807,11 +818,13 @@ strong {
     margin: 0px auto;
     max-width: 250px;
 }
-
+.active .rede-social-header ul {
+    text-align: center;
+}
 nav .menu-menu-1-container {display: none !important;}
 .active nav .menu-menu-1-container {display: table !important;position: fixed; top: 0; left:0;background: var(--azul); width: 100vw; height: 100vh;}
 nav .menu-menu-1-container ul {display: table-cell;vertical-align: middle; width: 100%; padding: 30px; margin: 0;list-style: none;}
-nav .menu-menu-1-container ul li {margin: 20px 0px;}
+nav .menu-menu-1-container ul li {margin: 20px 0px;text-align: center;}
 nav .menu-menu-1-container ul li a {color: var(--white) ; text-transform: uppercase; font-size: 20px;text-decoration: none;font-weight: 600;}
 .btn-menu {position: relative;z-index: 1000;text-align: right;}
 .btn-menu button{border: none; background: none;}
@@ -929,6 +942,7 @@ a:focus {
 }
 
 @media screen and (max-width: 800px) {
+    button.eua {display: none;}
     .rede-social-header {
         position: relative;
         right: unset;
@@ -953,7 +967,7 @@ a:focus {
         text-align: center!important;
     }
     .parcerias h2, .solucoes h2 {
-        font-size: 48px !important;
+        font-size: 43px !important;
         font-weight: 600;
         text-transform: uppercase;
     }
